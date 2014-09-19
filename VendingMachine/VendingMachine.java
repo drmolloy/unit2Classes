@@ -30,45 +30,41 @@ public class VendingMachine
     {
         numberOfCans = numberOfCans + cans;
     }
-
+
+
     /**
      *This method allows the user to put a token into the machine and a token will be added to the total tokens in the machine and a can will removed from the number of cans in the machine.
      
      * @pre The numberOfTokens and numberOfCans will have an int value.
-     
+     * @post the numberOfTokens will be 1 more than before and the numberOfCans will be 1 less than before
+     *
      */
     public void insertToken()
     {
         this.numberOfTokens = this.numberOfTokens + 1;
         this.numberOfCans = this.numberOfCans - 1;
     }
-
+
+
     /**
-     * An example of a method - replace this comment with your own
-     *  that describes the operation of the method
+     * this method returns the number of cans in the vending machine
      *
-     * @pre     preconditions for the method
-     *          (what the method assumes about the method's parameters and class's state)
-     * @post    postconditions for the method
-     *          (what the method guarantees upon completion)
-     * @param   y   description of parameter y
-     * @return  description of the return value
+     * @pre     assumes that numberOfCans has an int value
+     * 
+     * @return  number of cans in the vending machine
      */
     public int getCanCount()
     {
        return this.numberOfCans;
     }
-
+
+
     /**
-     * An example of a method - replace this comment with your own
-     *  that describes the operation of the method
+     * this method returns the number of tokens in the vending machine
      *
-     * @pre     preconditions for the method
-     *          (what the method assumes about the method's parameters and class's state)
-     * @post    postconditions for the method
-     *          (what the method guarantees upon completion)
-     * @param   y   description of parameter y
-     * @return  description of the return value
+     * @pre     assumes that numberOfTokens has an int value
+  
+     * @return  number of tokens in the vending machine
      */
     public int getTokenCount()
     {
