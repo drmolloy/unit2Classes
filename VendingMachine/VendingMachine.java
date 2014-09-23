@@ -17,8 +17,7 @@ public class VendingMachine
      */
     public VendingMachine()
     {
-        // initialise instance variables
-      
+       numberOfCans = 10;
     }
 
     /**
@@ -28,7 +27,7 @@ public class VendingMachine
      */
     public void fillUp(int cans)
     {
-        numberOfCans = numberOfCans + cans;
+        this.numberOfCans = this.numberOfCans + cans;
     }
 
 

@@ -44,12 +44,29 @@ public class VendingMachineTest
     public void tearDown()
     {
     }
-
+
+
     @Test
     public void testFillUp()
     {
-        // put your code here
-        return y;
+       VendingMachine testVendingMachine = new VendingMachine();
+       testVendingMachine.fillUp(20);
+       int cans = testVendingMachine.getCanCount();
+       assertEquals(30, cans);
+       
+       testVendingMachine.fillUp(5);
+       cans = testVendingMachine.getCanCount();
+       assertEquals(35, cans);
     }
 
+    @Test
+    public void testInsertToken()
+    {
+        VendingMachine testVendingMachine = new VendingMachine();
+        testVendingMachine.insertToken();
+        int cans = testVendingMachine.getCanCount();
+        int tokens = testVendingMachine.getTokenCount();
+        assertEquals(9, cans);
+        assertEquals(1, tokens);
+    }
 }
