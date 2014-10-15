@@ -2,10 +2,14 @@ import java.awt.Graphics;
 import java.awt.Graphics2D;
 import javax.swing.JComponent;
 /**
- * This component draws the buildings,
+ * This component creates all of the objects and sets the visbile
  */
 public class CityscapeComponent extends JComponent
 {
+    /**
+     * Draws the grass, sky, buildings, windows, sun, walkway, cloud, and doors
+     * @param g2 this the window that the building is drawn in
+     */
     public void paintComponent(Graphics g)
     {
         Graphics2D g2 = (Graphics2D) g;
